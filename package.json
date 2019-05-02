@@ -1,0 +1,27 @@
+{
+  "name": "joe_begs_comedy",
+  "version": "1.0.0",
+  "description": "Joe Begley comedy app built with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joebegley15/joe_begs_comedy.git"
+  },
+  "author": "Joe Begley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joebegley15/joe_begs_comedy/issues"
+  },
+  "homepage": "https://github.com/joebegley15/joe_begs_comedy#readme",
+  "dependencies": {
+    "atom": "^1.1.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5"
+  }
+}
