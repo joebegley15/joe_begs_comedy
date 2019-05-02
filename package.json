@@ -4,8 +4,11 @@
   "description": "Joe Begley comedy app built with MERN stack",
   "main": "server.js",
   "scripts": {
+    "cient-install": "cd client && npm i",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \" npm run server \" \" npm run client \""
   },
   "repository": {
     "type": "git",
