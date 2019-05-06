@@ -16,9 +16,11 @@ class Shows extends Component {
   }
 
   render() {
-    const {
+    let {
       shows: { shows }
     } = this.props;
+    shows.forEach(show => (show.startInt = new Date(show.startTime).getTime()));
+    shows.sort((a, b) => (a.startInt > b.startInt ? 1 : -1));
     return (
       <Table>
         <thead>
@@ -29,9 +31,11 @@ class Shows extends Component {
         </thead>
         <tbody>
           {shows.map(show => {
+            let date = show.date;
+            date = new Date(date).toDateString();
             return (
               <tr>
-                <td>{`${show.date} ${show.time}`}</td>
+                <td>{`${date} @ ${show.time}`}</td>
                 <td>{show.location}</td>
               </tr>
             );
