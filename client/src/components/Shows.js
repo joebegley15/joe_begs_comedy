@@ -19,8 +19,12 @@ class Shows extends Component {
     let {
       shows: { shows }
     } = this.props;
-    shows.forEach(show => (show.startInt = new Date(show.startTime).getTime()));
+    shows.forEach(show => {
+      show.startInt = new Date(show.date).getTime();
+      console.log(show.startInt, Date.now());
+    });
     shows.sort((a, b) => (a.startInt > b.startInt ? 1 : -1));
+    shows.filter(show => show.startInt > Date.now());
     return (
       <Table>
         <thead>
@@ -34,7 +38,7 @@ class Shows extends Component {
             let date = show.date;
             date = new Date(date).toDateString();
             return (
-              <tr>
+              <tr key={show._id}>
                 <td>{`${date} @ ${show.time}`}</td>
                 <td>{show.location}</td>
               </tr>
@@ -48,7 +52,7 @@ class Shows extends Component {
 
 Shows.propTypes = {
   getShows: PropTypes.func.isRequired,
-  item: PropTypes.object.isRequired
+  shows: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({ shows: state.shows });
