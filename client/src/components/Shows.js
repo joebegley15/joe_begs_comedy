@@ -19,12 +19,13 @@ class Shows extends Component {
     let {
       shows: { shows }
     } = this.props;
+    const yesterday = Date.now() - 86400000;
     shows.forEach(show => {
       show.startInt = new Date(show.date).getTime();
       console.log(show.startInt, Date.now());
     });
     shows.sort((a, b) => (a.startInt > b.startInt ? 1 : -1));
-    shows.filter(show => show.startInt > Date.now());
+    shows = shows.filter(show => show.startInt > yesterday);
     return (
       <Table>
         <thead>

@@ -5,6 +5,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import AppNavbar from "./components/AppNavbar.js";
 import Shows from "./components/Shows.js";
 import FrontPage from "./components/FrontPage.js";
+import Footer from "./components/Footer";
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -18,11 +19,12 @@ function App() {
       <div className="App">
         <header className="App-header">
           <AppNavbar />
-          <BrowserRouter>
-            <Route path="/home" component={FrontPage} />
-            <Route path="/shows" component={Shows} />
-          </BrowserRouter>
         </header>
+        <BrowserRouter>
+          <Route path="/home" component={FrontPage} />
+          <Route path="/shows" component={Shows} />
+        </BrowserRouter>
+        <Footer />
       </div>
     </Provider>
   );
