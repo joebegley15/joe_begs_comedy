@@ -6,7 +6,7 @@ const ShowSchema = new Schema({
     type: String,
     required: true
   },
-  startTime: {
+  date: {
     type: Date,
     required: true,
     default: Date.now()

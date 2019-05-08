@@ -8,26 +8,30 @@ class Footer extends Component {
 
   render() {
     return (
-      <footer class="page-footer font-small cyan darken-3">
+      <footer class="page-footer font-small cyan darken-3 footer">
         <div class="container">
-          <div class="row" dark>
-            <div class="col-md-12 py-5">
-              <div class="mb-5 flex-center">
-                <SocialIcon
-                  url="twitter.com/bigjoebegs"
-                  network="twitter"
-                  bgColor="#ff5a01"
-                />
-                <SocialIcon
-                  url="instagram.com/bigjoebegs"
-                  network="instagram"
-                />
-                <SocialIcon
-                  url="https://www.facebook.com/bigjoebegs/"
-                  network="facebook"
-                />
-              </div>
+          <div class="row top-row" dark>
+            <div class="social-icons">
+              <SocialIcon
+                url="twitter.com/bigjoebegs"
+                network="twitter"
+                bgColor="#ff5a01"
+                fgColor="white"
+              />
+              <SocialIcon
+                url="instagram.com/bigjoebegs"
+                network="instagram"
+                fgColor="white"
+              />
+              <SocialIcon
+                url="https://www.facebook.com/bigjoebegs/"
+                network="facebook"
+                fgColor="white"
+              />
             </div>
+          </div>
+          <div class="row bottom-row">
+            <div>Joe Begley</div>
           </div>
         </div>
       </footer>

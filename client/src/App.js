@@ -21,7 +21,7 @@ function App() {
           <AppNavbar />
         </header>
         <BrowserRouter>
-          <Route path="/home" component={FrontPage} />
+          <Route path={/^\/$/} component={FrontPage} />
           <Route path="/shows" component={Shows} />
         </BrowserRouter>
         <Footer />

@@ -1,0 +1,23 @@
+.App {
+  min-height: 100vh;
+}
+
+.footer {
+  position: fixed;
+  height: 75px;
+  background-color: red;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #212529;
+}
+
+.social-icons {
+  margin: 0 auto;
+}
+
+.social-icon {
+  height: 40px !important;
+  width: 40px !important;
+  margin: 5px;
+}
