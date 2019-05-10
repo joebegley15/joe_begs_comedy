@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import { getShows } from "../actions/showActions";
 import PropTypes from "prop-types";
 
-class Shows extends Component {
+class FutureShows extends Component {
   constructor(props) {
     super(props);
   }
@@ -51,7 +51,7 @@ class Shows extends Component {
   }
 }
 
-Shows.propTypes = {
+FutureShows.propTypes = {
   getShows: PropTypes.func.isRequired,
   shows: PropTypes.object.isRequired
 };
@@ -61,4 +61,4 @@ const mapStateToProps = state => ({ shows: state.shows });
 export default connect(
   mapStateToProps,
   { getShows }
-)(Shows);
+)(FutureShows);

@@ -4,7 +4,7 @@
 
 .footer {
   position: fixed;
-  height: 75px;
+  height: 55px;
   background-color: red;
   bottom: 0px;
   left: 0px;
@@ -20,4 +20,9 @@
   height: 40px !important;
   width: 40px !important;
   margin: 5px;
+}
+
+.contact {
+  margin: 0 auto;
+  text-align: center;
 }
