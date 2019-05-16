@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class ShowCounter extends Component {
+class pastShows extends Component {
   constructor(props) {
     super(props);
     this.getPastShows = this.getPastShows.bind(this);
@@ -16,4 +16,4 @@ class ShowCounter extends Component {
   }
 }
 
-export default ShowCounter;
+export default pastShows;

@@ -6,7 +6,7 @@ import AppNavbar from "./components/AppNavbar.js";
 import FutureShows from "./components/FutureShows.js";
 import Video from "./components/Video.js";
 import Contact from "./components/Contact.js";
-import ShowCounter from "./components/ShowCounter.js";
+import pastShows from "./components/pastShows.js";
 import FrontPage from "./components/FrontPage.js";
 import Footer from "./components/Footer";
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/shows" component={FutureShows} />
           <Route path="/contact" component={Contact} />
           <Route path="/video" component={Video} />
-          <Route path="/showCounter" component={ShowCounter} />
+          <Route path="/pastShows" component={pastShows} />
         </BrowserRouter>
         <Footer />
       </div>
