@@ -9,6 +9,7 @@ import Contact from "./components/Contact.js";
 import pastShows from "./components/pastShows.js";
 import FrontPage from "./components/FrontPage.js";
 import Footer from "./components/Footer";
+import Blog from "./components/Blog.js";
 
 import { Provider } from "react-redux";
 import store from "./store";
@@ -29,6 +30,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/video" component={Video} />
           <Route path="/pastShows" component={pastShows} />
+          <Route path="/blog" component={Blog} />
         </BrowserRouter>
         <Footer />
       </div>
